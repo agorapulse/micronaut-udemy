@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.agorapulse.udemy
+testFramework: spock
+sourceLanguage: groovy
+buildTool: gradle
+features: [app-name, data, data-jpa, gradle, groovy, groovy-application, h2, http-client, jdbc-hikari, logback, netty-server, readme, security-annotations, security-jwt, shade, spock, yaml]
