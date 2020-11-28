@@ -48,4 +48,27 @@ hello:
     greeting:
       de: 'Hallo!'
       en: 'Hello!'
-
+# Database
+flyway:
+  datasources:
+    default:
+      enabled: true
+      clean-schema: false
+      url: ${MYSQL_JDBC_URL:`jdbc:mysql://localhost:53306/mn-stock-broker`}
+      user: ${MYSQL_USER:micronaut}
+      password: ${MYSQL_PASSWORD:micronaut}
+datasources:
+  default:
+    url: ${MYSQL_JDBC_URL:`jdbc:mysql://localhost:53306/mn-stock-broker`}
+    username: ${MYSQL_USER:micronaut}
+    password: ${MYSQL_PASSWORD:micronaut}
+    schema-generate: NONE
+    dialect: MYSQL
+# JPA
+jpa:
+  default:
+    packages-to-scan:
+      - "com.agorapulse.udemy.broker.persistence"
+    properties:
+      hibernate:
+        show_sql: false

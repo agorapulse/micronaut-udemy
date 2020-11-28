@@ -22,15 +22,20 @@ micronaut {
 }
 
 dependencies {
+    compileOnly("io.micronaut.data:micronaut-data-processor")
     compileOnly("io.micronaut.openapi:micronaut-openapi")
     compileOnly("io.micronaut.security:micronaut-security-annotations")
 
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut.groovy:micronaut-runtime-groovy")
     implementation("javax.annotation:javax.annotation-api")
-    implementation("io.swagger.core.v3:swagger-annotations")
     implementation("io.micronaut:micronaut-http-client")
+    implementation("io.swagger.core.v3:swagger-annotations")
+    implementation("io.micronaut.flyway:micronaut-flyway")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
     implementation("io.micronaut.security:micronaut-security-jwt")
+    runtimeOnly("mysql:mysql-connector-java")
     runtimeOnly("ch.qos.logback:logback-classic")
 }
 

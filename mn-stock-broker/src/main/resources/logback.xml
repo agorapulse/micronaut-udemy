@@ -10,6 +10,10 @@
     </appender>
 
     <logger name="com.agorapulse.udemy" level="DEBUG"/>
+    <logger name="org.flywaydb.core" level="INFO"/>
+    <logger name="io.micronaut.flyway" level="INFO"/>
+    <logger name="io.micronaut.data.query" level="DEBUG"/>
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
 
     <root level="info">
         <appender-ref ref="STDOUT" />
