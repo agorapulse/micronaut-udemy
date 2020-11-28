@@ -36,17 +36,17 @@ class QuotesController {
     @Tag(name = 'quotes')
     @Get('/{symbol}')
     HttpResponse getQuote(@PathVariable String symbol) {
-        Optional<Quote> quote = store.fetchQuote(symbol)
-        log.debug('Get quote', quote)
-        if (quote.isEmpty()) {
+        Optional<Quote> maybeQuote = store.fetchQuote(symbol)
+        log.debug('Get quote', maybeQuote)
+        if (!maybeQuote.present) {
             CustomError error = new CustomError(
-                    error: HttpStatus.NOT_FOUND.name,
+                    error: HttpStatus.NOT_FOUND,
                     path: "/quote/$symbol",
                     message: 'Unknown quote',
                     status: HttpStatus.NOT_FOUND.code
             )
             return HttpResponse.notFound(error)
         }
-        HttpResponse.ok(quote.get())
+        HttpResponse.ok(maybeQuote.get())
     }
 }

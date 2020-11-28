@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: demo
+    name: mn-stock-broker
   server:
     port: 8080
   router:

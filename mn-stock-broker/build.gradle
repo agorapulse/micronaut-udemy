@@ -1,7 +1,7 @@
 plugins {
     id "groovy"
     id "com.github.johnrengelman.shadow" version "6.1.0"
-    id "io.micronaut.application" version '1.0.5'
+    id "io.micronaut.application" version '1.2.0'
 }
 
 version "0.1"
@@ -24,19 +24,21 @@ micronaut {
 dependencies {
     compileOnly("io.micronaut.openapi:micronaut-openapi")
     compileOnly("io.micronaut.security:micronaut-security-annotations")
-    compileOnly("io.swagger.core.v3:swagger-annotations")
 
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut.groovy:micronaut-runtime-groovy")
     implementation("javax.annotation:javax.annotation-api")
+    implementation("io.swagger.core.v3:swagger-annotations")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.security:micronaut-security-jwt")
     runtimeOnly("ch.qos.logback:logback-classic")
 }
 
 
+application {
+    mainClass.set("com.agorapulse.udemy.Application")
+}
 
-mainClassName = "com.agorapulse.udemy.Application"
 java {
     sourceCompatibility = JavaVersion.toVersion('8')
     targetCompatibility = JavaVersion.toVersion('8')
