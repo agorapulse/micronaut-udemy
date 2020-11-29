@@ -30,3 +30,9 @@ Used in :
 * Section 5: Micronaut Data - 39. Schema migration with Liquibase
 * Section 5: Micronaut Data - 40. Micronaut Data JDBC - Repository
 
+### mn-websockets
+
+Simple demo app to show web sockets features.
+
+Used in :
+* Section 7: Using Web Sockets
