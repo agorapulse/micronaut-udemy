@@ -1,8 +1,8 @@
 ## Micronaut Udemy Demo App
 
-This is the Groovy-based version of Udemy demo app of the [Micronaut Udemy course](https://www.udemy.com/course/learn-micronaut/).
+This is the Groovy-based version of Udemy demo apps created during the [Micronaut Udemy course](https://www.udemy.com/course/learn-micronaut/).
 
-The original Java-based version can be found [here](https://github.com/danielprinz/micronaut-udemy)
+The original Java-based versions can be found [here](https://github.com/danielprinz/micronaut-udemy)
 
 ### mn-stock-brocker
 
