@@ -1,0 +1,9 @@
+mysql:
+  image: "mysql:5.7"
+  ports:
+    - '0.0.0.0:53306:3306'
+  environment:
+    MYSQL_ROOT_PASSWORD: agorapulse
+    MYSQL_DATABASE: mn-funding
+    MYSQL_PASSWORD: micronaut
+    MYSQL_USER: micronaut

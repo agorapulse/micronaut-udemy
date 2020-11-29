@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: mnFunding
+# Database
+datasources:
+  default:
+    url: jdbc:mysql://localhost:53306/mn-funding
+    username: micronaut
+    password: micronaut
+    schema-generate: NONE
+    dialect: MYSQL
+liquibase:
+  datasources:
+    default:
+      enabled: true
+      change-log: 'classpath:db/liquibase-changelog.xml'
+      drop-first: true
