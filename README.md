@@ -2,7 +2,17 @@
 
 This is the Groovy-based version of Udemy demo apps created during the [Micronaut Udemy course](https://www.udemy.com/course/learn-micronaut/).
 
-The original Java-based versions can be found [here](https://github.com/danielprinz/micronaut-udemy)
+It uses the following stack:
+* **Groovy** as coding language
+* **Gradle** for build, test and dependency management
+* **Spock** for testing
+* **Java 8** for runtime
+
+The original Java-based versions can be found [here](https://github.com/danielprinz/micronaut-udemy) and is based on:
+* **Java** as coding language
+* **Maven** for build, test and dependency management
+* **JUnit** for testing
+* **Java 11** for runtime
 
 ### mn-stock-brocker
 
